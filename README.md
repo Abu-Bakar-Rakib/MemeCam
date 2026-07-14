@@ -133,11 +133,10 @@ MemeCam/
 ├── main.py              # Main application entry point
 ├── README.md            # This file
 ├── requirements.txt     # Python dependencies (optional)
-└── memes/               # Meme image assets
-    ├── kid.jpg
-    ├── hehe.jfif
-    ├── what.jfif
-    └── ... (other meme files)
+├── kid.jpg
+ ├── hehe.jfif
+ ├── what.jfif
+ └── ... (other meme files)
 ```
 
 ---
