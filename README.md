@@ -1,199 +1,293 @@
-# MemeCam 📸🎭
+# 📸 MemeCam
 
-A real-time AI-powered webcam application that detects hand gestures and facial expressions to trigger contextually relevant meme overlays. Built with Python, OpenCV, and Google MediaPipe for fast, accurate computer vision processing.
+<p align="center">
+  <img src="assets/banner.gif" width="100%" alt="MemeCam Banner">
+</p>
 
----
+<p align="center">
+  <strong>AI-Powered Real-Time Meme Detection Using Hand Gestures & Facial Expressions</strong>
+</p>
 
-## Overview
-
-MemeCam is an interactive desktop application that leverages modern computer vision and machine learning to recognize human gestures and expressions in real-time. The application automatically displays corresponding meme images on your screen based on detected poses and facial cues, creating an engaging and entertaining user experience.
-
-**Key Technologies:**
-- Python 3.x
-- OpenCV (image processing and display)
-- Google MediaPipe (face and hand landmark detection)
-- NumPy (numerical computation)
-
----
-
-## Features
-
-- **Real-Time AI Tracking** – Fast and efficient face and hand landmark detection using MediaPipe's pre-trained models
-- **Automatic Calibration** – Self-calibrating neutral face detection during startup to ensure accurate facial expression recognition
-- **Gesture Recognition** – Supports 10+ unique gestures and facial expressions across both single-hand and dual-hand interactions
-- **Live HUD Display** – On-screen indicators showing detected gesture status and active meme overlay
-- **Lightweight & Responsive** – Optimized for real-time performance with minimal latency
-
-![MemeCam Demo](https://github.com/user-attachments/assets/f19ac8ab-c768-4144-a90f-9f48712b0e2c)
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.9+-blue.svg">
+  <img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-green.svg">
+  <img src="https://img.shields.io/badge/MediaPipe-AI%20Tracking-orange.svg">
+  <img src="https://img.shields.io/badge/Real--Time-30FPS-success.svg">
+  <img src="https://img.shields.io/badge/Status-Active-purple.svg">
+  <img src="https://img.shields.io/github/stars/Abu-Bakar-Rakib/MemeCam?style=social">
+</p>
 
 ---
 
-## Supported Gestures & Memes
+## 🎭 Overview
 
-### Single-Hand Gestures
+**MemeCam AI** is an interactive computer vision application that transforms your webcam into an intelligent meme machine.
 
-| Gesture | Meme | Description |
-|---------|------|-------------|
-| **Closed Fist** | Success Kid | Raise a single closed fist with all fingers closed |
-| **Shaka Sign** | Hehehe Lizard | Show a surfer/shaka sign (pinky extended, others closed) |
-| **Open Hand** | Confused / What | Fully open hand with all fingers extended |
-| **Index Point to Eye** | Roll Safe / Think About It | Point index finger directly at or very close to your eye or temple |
-| **Peace Sign** | Rat | Index and middle fingers extended, others closed |
+Powered by **OpenCV**, **MediaPipe**, and **Python**, the system analyzes hand gestures and facial expressions in real time, automatically triggering context-aware meme reactions. Whether you're flashing a peace sign, raising your eyebrows, pointing at your temple, or sticking out your tongue, MemeCam instantly detects the action and displays the perfect meme.
 
-### Dual-Hand Gestures
-
-| Gesture | Meme | Description |
-|---------|------|-------------|
-| **Both Hands Up** | Sonic | Both hands raised with index fingers pointing upward, held above nose level |
-| **Open Hands Apart** | Cara / Khaby Lame | Both hands fully open and held apart in the lower camera area |
-| **Fingers to Mouth** | Cristiano | Both index fingers pointed toward your mouth |
-
-### Facial Expressions
-
-| Expression | Meme | Description |
-|------------|------|-------------|
-| **Tongue Out** | Cat | Open mouth wide with tongue extended and chin lowered |
-| **Raised Eyebrows** | Dog | Playfully raised eyebrows |
+This project combines modern AI-powered landmark tracking with internet culture to create a fun, engaging, and highly interactive experience.
 
 ---
 
-## Installation
+## ✨ Features
 
-### Prerequisites
+### 🤖 AI-Powered Detection
+- Real-time face landmark tracking
+- Real-time hand landmark tracking
+- Dual-hand gesture recognition
+- Facial expression analysis
+- Face-hand interaction detection
+- Adaptive confidence smoothing
 
-- Python 3.7 or higher
-- Webcam device
-- All meme image files (.jpg, .jpeg, .jfif, .png)
+### 🎯 Smart Calibration
+- Automatic facial calibration during startup
+- Personalized expression thresholds
+- Improved accuracy across users
+- Robust detection in different environments
 
-### Setup Instructions
+### 🖐️ Gesture Recognition Engine
+Supports:
+- Single-hand gestures
+- Dual-hand gestures
+- Facial expressions
+- Combined face + hand interactions
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Abu-Bakar-Rakib/MemeCam.git
-   cd MemeCam
-   ```
+### 📊 Live HUD Interface
+- Current detected gesture
+- Active meme status
+- Hand state visualization
+- Detection feedback system
 
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-   
-   Or manually install required packages:
-   ```bash
-   pip install opencv-python mediapipe numpy
-   ```
-
-3. **Verify meme assets:**
-   Ensure all meme image files are located in the same directory as `main.py`:
-   - `kid.jpg`
-   - `hehe.jfif`
-   - `what.jfif`
-   - `nigga.png`
-   - `rata.jpeg`
-   - `Sonic.jpeg`
-   - `cara.jpeg`
-   - `cristiano.png`
-   - `gato1.png`
-   - `perro.jpeg`
+### ⚡ Real-Time Performance
+- Low latency processing
+- Lightweight architecture
+- Optimized MediaPipe pipeline
+- Smooth webcam interaction
 
 ---
 
-## Usage
+# 🎬 Supported Meme Reactions
 
-### Running the Application
+## 🖐️ Single-Hand Gestures
+
+| Gesture | Meme |
+|----------|----------|
+| ✊ Closed Fist | Success Kid |
+| 🤙 Shaka Sign | Hehehe Lizard |
+| ✋ Open Hand | Confused / What |
+| 👁️ Point to Eye | Roll Safe |
+| ✌️ Peace Sign | Rat |
+
+---
+
+## 🙌 Dual-Hand Gestures
+
+| Gesture | Meme |
+|----------|----------|
+| ☝️ Both Hands Raised | Sonic |
+| 👐 Open Hands Apart | Khaby Lame |
+| 👉 Fingers Toward Mouth | Cristiano Ronaldo |
+
+---
+
+## 😀 Facial Expressions
+
+| Expression | Meme |
+|------------|------------|
+| 👅 Tongue Out | Cat |
+| 🤨 Raised Eyebrows | Dog |
+
+---
+
+# 🧠 AI Detection Pipeline
+
+```text
+Webcam Input
+      │
+      ▼
+MediaPipe Face Mesh
+      │
+      ├── Facial Expression Analysis
+      │
+      ▼
+MediaPipe Hand Tracking
+      │
+      ├── Single-Hand Detection
+      ├── Dual-Hand Detection
+      └── Face-Hand Interaction
+      │
+      ▼
+Gesture Classification
+      │
+      ▼
+Meme Selection Engine
+      │
+      ▼
+Real-Time Meme Display
+```
+
+---
+
+# 📸 Demo
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f19ac8ab-c768-4144-a90f-9f48712b0e2c" width="900">
+</p>
+
+---
+
+# 🛠️ Technology Stack
+
+| Technology | Purpose |
+|------------|----------|
+| Python | Core Development |
+| OpenCV | Image Processing |
+| MediaPipe | Face & Hand Tracking |
+| NumPy | Numerical Computation |
+
+---
+
+# 📦 Installation
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/Abu-Bakar-Rakib/MemeCam.git
+
+cd MemeCam
+```
+
+## Install Dependencies
+
+```bash
+pip install opencv-python mediapipe numpy
+```
+
+Or install from requirements file:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# ▶️ Running MemeCam
 
 ```bash
 python main.py
 ```
 
-### Calibration Phase
+---
 
-1. Upon startup, a calibration progress bar will appear
-2. Face the camera with a **neutral, relaxed expression**
-3. Keep your face steady and centered until the calibration reaches 100%
-4. This process takes approximately 3-5 seconds and ensures optimal accuracy for your facial features
+# 🎯 Calibration Process
 
-### Gesture Detection
+When MemeCam starts:
 
-After calibration completes:
-1. Perform any supported gesture or facial expression
-2. The detected meme will display in a separate "Meme Detectado" window
-3. The HUD will indicate the current recognized gesture
+1. Look directly at the webcam.
+2. Maintain a neutral facial expression.
+3. Keep your face centered.
+4. Remain still for a few seconds.
 
-### Exiting
-
-Press `ESC` to exit the application at any time.
+The application will automatically calibrate your facial features to improve expression recognition accuracy.
 
 ---
 
-## Project Structure
+# 🎮 Controls
 
-```
+| Key | Action |
+|------|---------|
+| ESC | Exit Application |
+
+---
+
+# 📂 Project Structure
+
+```text
 MemeCam/
-├── main.py              # Main application entry point
-├── README.md            # This file
-├── requirements.txt     # Python dependencies (optional)
+│
+├── main.py
+├── README.md
+├── requirements.txt
+│
 ├── kid.jpg
- ├── hehe.jfif
- ├── what.jfif
- └── ... (other meme files)
+├── hehe.jfif
+├── what.jfif
+├── rata.jpeg
+├── Sonic.jpeg
+├── cara.jpeg
+├── cristiano.png
+├── gato1.png
+└── perro.jpeg
 ```
 
 ---
 
-## Performance Considerations
+# 📈 Performance
 
-- **Frame Rate:** Application targets 30 FPS for smooth real-time detection
-- **Latency:** Gesture detection typically occurs within 100-200ms of the gesture being performed
-- **System Requirements:** Requires a modern CPU; GPU acceleration optional but recommended for better performance
-- **Webcam Quality:** Works best with webcams providing 720p or higher resolution
-
----
-
-## Troubleshooting
-
-| Issue | Solution |
-|-------|----------|
-| **Memes not appearing** | Verify all image files are in the correct directory and file names match exactly |
-| **Poor gesture detection** | Ensure proper lighting; complete full calibration with neutral expression |
-| **Lag or stuttering** | Close other CPU-intensive applications; check webcam resolution settings |
-| **Calibration fails** | Keep your face centered and still during calibration; ensure adequate lighting |
+| Metric | Value |
+|----------|----------|
+| Face Tracking | Real-Time |
+| Hand Tracking | Up to 2 Hands |
+| Camera Resolution | 640×480+ |
+| Target FPS | 30 FPS |
+| Detection Latency | < 200 ms |
 
 ---
 
-## Future Enhancements
+# 🚀 Future Improvements
 
-- [ ] Custom gesture configuration via JSON config file
-- [ ] Additional gesture recognition (e.g., thumbs up, V-sign)
-- [ ] Sound effects and audio feedback
-- [ ] Gesture combo detection (sequential gestures)
-- [ ] Performance metrics and statistics
-- [ ] Settings GUI for calibration and sensitivity tuning
-
----
-
-## License
-
-This project is provided as-is for educational and entertainment purposes.
+- [ ] Custom Meme Packs
+- [ ] User-Defined Gesture Mapping
+- [ ] Sound Effects & Audio Reactions
+- [ ] Deep Learning Gesture Classification
+- [ ] Multi-Person Support
+- [ ] Streamlit Web Version
+- [ ] Meme Statistics Dashboard
+- [ ] Custom Training Mode
 
 ---
 
-## Contributing
+# 🤝 Contributing
 
-Contributions are welcome! To contribute:
+Contributions are welcome!
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create your feature branch
+
+```bash
+git checkout -b feature/AmazingFeature
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add AmazingFeature"
+```
+
+4. Push to GitHub
+
+```bash
+git push origin feature/AmazingFeature
+```
+
 5. Open a Pull Request
 
 ---
 
-## Contact & Support
+# 📜 License
 
-For issues, questions, or suggestions, please open a GitHub Issue or contact the repository maintainer.
+This project is provided for educational, research, and entertainment purposes.
 
 ---
 
-**Enjoy detecting memes! 🎉**
+# ⭐ Support
+
+If you enjoyed this project, consider giving it a **Star ⭐** on GitHub.
+
+Your support helps the project reach more developers, researchers, and meme enthusiasts.
+
+---
+
+<p align="center">
+  <b>Built with ❤️ using Python, OpenCV, MediaPipe, and Memes 🎭</b>
+</p>
