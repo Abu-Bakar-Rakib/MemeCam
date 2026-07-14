@@ -9,6 +9,7 @@ Built with **Python**, **OpenCV**, and **Google MediaPipe** (FaceMesh & Hands), 
 - **Dynamic Calibration:** Calibrates to your neutral face shape automatically during the first few seconds of startup to ensure accurate facial expression detection.
 - **Gesture-Based Memes:** Translates iconic real-life poses into their corresponding internet memes.
 - **Minimalist HUD:** Displays real-time hand gesture status and current active meme on the camera feed.
+<img width="1361" height="602" alt="mem" src="https://github.com/user-attachments/assets/f19ac8ab-c768-4144-a90f-9f48712b0e2c" />
 
 ## Supported Memes & Gestures
 Here are the current memes supported and the gestures you need to perform to trigger them:
